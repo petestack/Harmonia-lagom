@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harmonia Lagom</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #5ca4a9;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    header img {
+      max-width: 80px;
+      display: block;
+      margin: 0 auto 0.5em;
+    }
+    nav {
+      text-align: center;
+      margin: 1em 0;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #5ca4a9;
+      font-weight: bold;
+    }
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 1em;
+      background: white;
+      margin-bottom: 2em;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #5ca4a9;
+    }
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+    }
+    form label {
+      display: block;
+      margin-top: 1em;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.5em;
+    }
+    form button {
+      margin-top: 1em;
+      padding: 0.7em 1.5em;
+      background: #5ca4a9;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .lang-switcher {
+      margin-top: 1em;
+    }
+    .lang-switcher a {
+      margin: 0 10px;
+      color: #5ca4a9;
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    function switchLanguage(lang) {
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.innerText = el.dataset[lang];
+      });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Peace_symbol.svg" alt="Símbolo da Harmonia Lagom">
+    <h1>Harmonia Lagom – Uma Fé de Equilíbrio, Ciência e Paz</h1>
+  </header>
+  <nav>
+    <a href="#about">Sobre</a>
+    <a href="#principles">Princípios</a>
+    <a href="#commandments">Mandamentos</a>
+    <a href="#community">Comunidade</a>
+    <a href="#join">Entrar</a>
+    <a href="#contact">Contato</a>
+  </nav>
+  <section id="about">
+    <h2>O que é a Harmonia Lagom?</h2>
+    <p>A Harmonia Lagom é um caminho global pacífico que combina o rigor da <strong>ciência</strong>, a sabedoria do <strong>Lagom</strong> (um princípio sueco de equilíbrio) e a força nutritiva dos <strong>valores familiares</strong>. Acolhe a diversidade, promove a liberdade e incentiva uma vida harmoniosa entre todas as culturas.</p>
+  </section>
+  <section id="principles">
+    <h2>Princípios Centrais</h2>
+    <ul>
+      <li>A ciência como caminho para o entendimento</li>
+      <li>Lagom (equilíbrio e moderação) como estilo de vida</li>
+      <li>A família como espaço sagrado de amor e aprendizado</li>
+      <li>Respeito por todas as crenças e tradições pacíficas</li>
+      <li>Rejeição absoluta ao ódio, violência ou extremismo</li>
+    </ul>
+  </section>
+  <section id="commandments">
+    <h2>Mandamentos</h2>
+    <ol>
+      <li>Busque a verdade por meio da ciência e da razão.</li>
+      <li>Viva em equilíbrio — nem de menos, nem de mais.</li>
+      <li>Cuide da sua família com amor, carinho e conhecimento.</li>
+      <li>Honre todas as fés e tradições pacíficas.</li>
+      <li>Rejeite todas as formas de fanatismo, ódio ou divisão.</li>
+    </ol>
+  </section>
+  <section id="community">
+    <h2>Comunidade Global</h2>
+    <p>A <strong>União da Harmonia Lagom (U.H.L.)</strong> é uma rede crescente de famílias, indivíduos e culturas que compartilham os ideais de equilíbrio e paz. Qualquer pessoa, de qualquer origem ou crença, pode integrar a Harmonia Lagom à sua vida — não como substituição, mas como uma força complementar de união.</p>
+  </section>
+  <section id="join">
+    <h2>Formulário de Associação</h2>
+    <form action="/submit" method="POST">
+      <label for="name">Nome completo:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Por que você deseja se juntar à Harmonia Lagom?</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  <section id="contact">
+    <h2>Contato</h2>
+    <p><strong>Email:</strong> contato@harmonialagom.org</p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/harmonialagom_br" target="_blank">@harmonialagom_br</a></p>
+    <div class="lang-switcher">
+      🌐 <a href="#" onclick="switchLanguage('pt')">Português</a> | <a href="#" onclick="switchLanguage('es')">Español</a> | <a href="#" onclick="switchLanguage('en')">English</a>
+    </div>
+  </section>
+  <footer>
+    <p>© 2025 Harmonia Lagom. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
